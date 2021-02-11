@@ -146,10 +146,10 @@ class StackArrayList<T> {
   }
 
   /**
-	 * If the stack is not empty, then return the item on the top of the stack. 
+   * If the stack is not empty, then return the item on the top of the stack. 
    * @return the item on the top of the stack. 
-   * @exception StackReadException if stack is empty.
-	 */
+   * @throws StackReadException if the stack is empty.
+   */
   public T peek() throws StackReadException {
     if (container.isEmpty()) {
       throw new StackReadException();
