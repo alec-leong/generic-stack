@@ -120,12 +120,13 @@ class StackArrayList<T> {
     return output.toString();
   }
   
-	/**
-	 * If the stack is not full, then insert an item on the top of the stack. 
+  /**
+   * If the stack is not full, first increment the <code>top</code> field then insert an item on the
+   * top of the stack.
    * @param item the item to be inserted on the top of the stack.
-   * @exception StackInsertException if stack is full.
-	 */
-  public void push(T item) throws StackInsertException {
+   * @throws StackInsertException if the stack is full.
+   */
+   public void push(T item) throws StackInsertException {
     if (container.size() == maxSize && maxSize > 0) {
       throw new StackInsertException();
     }
