@@ -134,9 +134,11 @@ class StackArrayList<T> {
   }
 
   /**
-	 * If the stack is not empty, then delete the item on the top of the stack. 
-   * @exception StackDeleteException if stack is empty.
-	 */
+   * If the stack is not empty, then delete the item on the top of the stack and decrement the
+   * <code>top</code> field. 
+   * @return the item on the top of the stack. 
+   * @throws StackDeleteException if the stack is empty.
+   */
   public T pop() throws StackDeleteException {
     if (container.isEmpty()) {
       throw new StackDeleteException();
