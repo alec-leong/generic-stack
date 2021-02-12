@@ -2,14 +2,18 @@ class Main {
   public static void main(String[] args) {
     try {
       StackArrayList<Integer> primes = new StackArrayList<>();
+
+      System.out.println(primes.isEmpty()); // true
+
       primes.push(2);
       primes.push(3);
       primes.push(5);
       primes.push(7);
       primes.push(11);
 
-      System.out.println(primes.peek()); // 11
-      System.out.println(primes.size()); // 5
+      System.out.println(primes.isFull()); // false
+      System.out.println(primes.peek());   // 11
+      System.out.println(primes.size());   // 5
       System.out.println(primes);
  
       int primeNum = primes.pop();
@@ -26,6 +30,8 @@ class Main {
 }
 
 /* Output
+true
+false
 11
 5
 [
@@ -43,4 +49,5 @@ class Main {
  3,
  2
 ]
+
 */
