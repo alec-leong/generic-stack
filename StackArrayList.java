@@ -176,4 +176,12 @@ class StackArrayList<T> {
   public boolean isEmpty() {
     return container.isEmpty(); // top == -1
   }
+
+  /**
+   * Returns a <code>boolean</code> if the stack is full or not full.
+   * @return <code>true</code> if the stack is full. Otherwise <code>false</code>.
+   */
+  public boolean isFull() {
+    return container.size() == maxSize;
+  }
 }
