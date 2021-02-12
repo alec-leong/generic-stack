@@ -58,15 +58,14 @@ class StackArrayList<T> {
   private int maxSize;       // The maximum number of items in the stack.
   private List<T> container; // The List implentation of the stack.
 
-	/**
-	 * No-argument constructor. 
-	 * <p>
-	 * Creates a <code>StackArrayList</code> object that doesn't become full and initializes the following fields:
-	 * <ul>
-	 * <li><code>top</code>       - The <code>int</code> value <code>-1</code>.
-	 * <li><code>container</code> - A <code>List</code> object implemented by the <code>ArrayList</code> class.
-	 * </ul>
-	 */
+  /**
+   * No-argument constructor.
+   * <p>
+   * Creates a <code>StackArrayList</code> object that doesn't become full and initializes the following fields:
+   * <li><code>top</code>       - The <code>int</code> value <code>-1</code>.
+   * <li><code>container</code> - A <code>List</code> object implemented by the <code>ArrayList</code> class.
+   * </ul>
+   */
   StackArrayList() {
     top = -1;
     container = new ArrayList<>();
@@ -81,8 +80,7 @@ class StackArrayList<T> {
    * <li><code>maxSize</code>   - The value of the <code>int</code> parameter <code>maxSize</code>.
    * <li><code>container</code> - A <code>List</code> object implemented by the <code>ArrayList</code> class with an initial capacity of <code>maxSize</code>.
    * @param maxSize the maximum size of the stack.
-   * @throws StackIllegalSizeDeclartion if the the value of the <code>int</code> parameter
-   * <code>maxSize</code> if less than or equal to <code>0</code>.
+   * @throws StackIllegalSizeDeclartion if the the value of the <code>int</code> parameter <code>maxSize</code> if less than or equal to <code>0</code>.
    */
   StackArrayList(int maxSize) throws StackIllegalSizeDeclartion {
     if (maxSize <= 0) {
