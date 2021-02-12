@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * <code>StackInsertException</code> Class
+ * <code>StackIllegalSizeDeclaration</code> Class
  * <p>
  * A subclass of the <code>IllegalArgumentException</code> class. An exception for creating a
  * <code>StackArrayList</code> with an illegal size declaration. 
