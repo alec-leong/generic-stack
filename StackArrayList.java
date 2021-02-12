@@ -73,15 +73,17 @@ class StackArrayList<T> {
   }
 
   /**
-	 * Parameterized constructor with one parameter.
-	 * <p>
-	 * Creates a <code>StackArrayList</code> object that can become full and initializes the following fields:
-	 * <ul>
-	 * <li><code>top</code>       - The <code>int</code> value <code>-1</code>.
+   * Parameterized constructor with one parameter.
+   * <p>
+   * Creates a <code>StackArrayList</code> object that can become full and initializes the following
+   * fields:
+   * <li><code>top</code>       - The <code>int</code> value <code>-1</code>.
    * <li><code>maxSize</code>   - The value of the <code>int</code> parameter <code>maxSize</code>.
-	 * <li><code>container</code> - A <code>List</code> object implemented by the <code>ArrayList</code> class with an initial capacity of <code>maxSize</code>.
-	 * </ul>
-	 */
+   * <li><code>container</code> - A <code>List</code> object implemented by the <code>ArrayList</code> class with an initial capacity of <code>maxSize</code>.
+   * @param maxSize the maximum size of the stack.
+   * @throws StackIllegalSizeDeclartion if the the value of the <code>int</code> parameter
+   * <code>maxSize</code> if less than or equal to <code>0</code>.
+   */
   StackArrayList(int maxSize) throws StackIllegalSizeDeclartion {
     if (maxSize <= 0) {
       throw new StackIllegalSizeDeclartion(maxSize);
