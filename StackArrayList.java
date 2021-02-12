@@ -80,7 +80,7 @@ class StackArrayList<T> {
    * <li><code>maxSize</code>   - The value of the <code>int</code> parameter <code>maxSize</code>.
    * <li><code>container</code> - A <code>List</code> object implemented by the <code>ArrayList</code> class with an initial capacity of <code>maxSize</code>.
    * @param maxSize the maximum size of the stack.
-   * @throws StackIllegalSizeDeclaration if the the value of the <code>int</code> parameter <code>maxSize</code> if less than or equal to <code>0</code>.
+   * @throws StackIllegalSizeDeclaration if the the value of the <code>int</code> parameter <code>maxSize</code> is less than or equal to <code>0</code>.
    */
   StackArrayList(int maxSize) throws StackIllegalSizeDeclaration {
     if (maxSize <= 0) {
