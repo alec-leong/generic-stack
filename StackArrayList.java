@@ -6,8 +6,8 @@ import java.util.*;
  * A subclass of the <code>IllegalArgumentException</code> class. An exception for creating a
  * <code>StackArrayList</code> with an illegal size declaration. 
  */
-class StackIllegalSizeDeclartion extends IllegalArgumentException {
-  public StackIllegalSizeDeclartion(int maxSize) {
+class StackIllegalSizeDeclaration extends IllegalArgumentException {
+  public StackIllegalSizeDeclaration(int maxSize) {
     super("Can't declare stack size of " + maxSize);
   }
 }
@@ -80,11 +80,11 @@ class StackArrayList<T> {
    * <li><code>maxSize</code>   - The value of the <code>int</code> parameter <code>maxSize</code>.
    * <li><code>container</code> - A <code>List</code> object implemented by the <code>ArrayList</code> class with an initial capacity of <code>maxSize</code>.
    * @param maxSize the maximum size of the stack.
-   * @throws StackIllegalSizeDeclartion if the the value of the <code>int</code> parameter <code>maxSize</code> if less than or equal to <code>0</code>.
+   * @throws StackIllegalSizeDeclaration if the the value of the <code>int</code> parameter <code>maxSize</code> if less than or equal to <code>0</code>.
    */
-  StackArrayList(int maxSize) throws StackIllegalSizeDeclartion {
+  StackArrayList(int maxSize) throws StackIllegalSizeDeclaration {
     if (maxSize <= 0) {
-      throw new StackIllegalSizeDeclartion(maxSize);
+      throw new StackIllegalSizeDeclaration(maxSize);
     }
   
     top = -1;
